@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+
+body {
+  background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+  color: #222;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.custom-navbar {
+  background: linear-gradient(90deg, #4F8A8B 0%, #235e6f 100%) !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-brand, .navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:focus {
+  color: #ffd166 !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card {
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 4px 24px rgba(79,138,139,0.10);
+}
+.card-title, h1, h2, h3, h4, h5 {
+  color: #235e6f;
+  font-weight: 700;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-primary {
+  background: #4F8A8B;
+  border: none;
+  color: #fff;
+}
+.btn-primary:hover, .btn-primary:focus {
+  background: #235e6f;
+  color: #ffd166;
+}
+.btn-outline-secondary {
+  border-color: #4F8A8B;
+  color: #4F8A8B;
+}
+.btn-outline-secondary:hover, .btn-outline-secondary:focus {
+  background: #4F8A8B;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a, .App-link {
+  color: #4F8A8B;
+  text-decoration: underline;
+}
+a:hover, .App-link:hover {
+  color: #235e6f;
+}
+
+.table {
+  background: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.table thead {
+  background: #4F8A8B;
+  color: #fff;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #e0f7fa;
+}
+.table-bordered {
+  border: 2px solid #4F8A8B;
+}
+
+/* Modal styling */
+.modal-content {
+  border-radius: 1rem;
+  border: none;
+}
+.modal-header {
+  background: #4F8A8B;
+  color: #fff;
+  border-bottom: none;
+}
+.modal-footer {
+  border-top: none;
+}
+
+/* Form styling */
+.form-control:focus {
+  border-color: #4F8A8B;
+  box-shadow: 0 0 0 0.2rem rgba(79,138,139,0.15);
+}
+.form-label {
+  color: #235e6f;
+  font-weight: 500;
+}
+
+/* Utility */
+.text-primary {
+  color: #4F8A8B !important;
+}
+.text-success {
+  color: #43aa8b !important;
+}
+.text-info {
+  color: #118ab2 !important;
+}
+.text-warning {
+  color: #ffd166 !important;
+}
+.text-danger {
+  color: #ef476f !important;
 }
